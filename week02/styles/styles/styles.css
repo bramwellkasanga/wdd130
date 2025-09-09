@@ -14,12 +14,10 @@ nav a {
     text-decoration: none;
 }
 
-/* HEADING STYLES */
 h1 {
     color: #2a5d84;
 }
 
-/* GLOBAL IMAGE STYLES */
 img {
     width: 200px;
     height: auto;
@@ -28,7 +26,6 @@ img {
     box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
-/* ASIDE STYLES */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -37,17 +34,6 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-/* Style only the Zimbabwe flag image in aside */
-img[alt="Flag of Zimbabwe"] {
-    width: 100%;
-    height: auto;
 }
 
 p {
