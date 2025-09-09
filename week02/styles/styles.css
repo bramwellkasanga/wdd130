@@ -2,12 +2,6 @@ main {
     max-width: 840px;
 }
 
-main img {
-    width: 200px;
-    height: auto;
-}
-
-/* NAVIGATION STYLES */
 nav {
     background-color: #333;
     padding: 1rem;
