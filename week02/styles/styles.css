@@ -18,7 +18,7 @@ h1 {
     color: #2a5d84;
 }
 
-img {
+main img {
     width: 200px;
     height: auto;
     border: 2px solid #ccc;
@@ -29,7 +29,7 @@ img {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2); /* subtle, transparent border */
+    border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
