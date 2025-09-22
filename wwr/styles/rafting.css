@@ -25,16 +25,16 @@ header, main, footer {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    padding-top: 1rem;
+    padding: 1rem 0;
+    background: #e0f7fa;
 }
 
 header img {
-    max-width: 320px;
-    height: auto;
-    margin-bottom: 0.5rem;
+    max-height: 60px;
+    margin-right: 2rem;
 }
 
 nav {
@@ -196,4 +196,48 @@ footer p {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+/* Adventure Gallery Layout */
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.adventure-gallery figure {
+    flex: 1 1 0;
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    max-width: 140px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #4682b4;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    margin-bottom: 0.5rem;
+}
+
+.adventure-gallery figcaption {
+    font-size: 1rem;
+    color: #2a5d84;
+    margin-top: 0.25rem;
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+footer nav img {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
 }
