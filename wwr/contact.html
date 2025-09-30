@@ -41,6 +41,25 @@
             </div>
         </section>
 
+        <!-- Employee Section -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Vengie Shepherd, Lead Rafting Guide">
+                    <figcaption>Vengie Shepherd<br>Lead Rafting Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Mpho Andrews, Safety Coordinator">
+                    <figcaption>Mpho Andrews<br>Safety Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Costa Peters, Equipment Manager">
+                    <figcaption>Costa Peters<br>Equipment Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+
         <!-- Contact Form Section -->
         <section class="contact-form">
             <h2>Send us a Message</h2>
@@ -51,8 +70,43 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="experience">Experience Level:</label>
+                <select id="experience" name="experience" required>
+                    <option value="">Select your experience level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+                <label for="participants">Number of Participants:</label>
+                <input type="number" id="participants" name="participants" min="1" max="20" required>
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
+
+                <fieldset>
+                    <legend>What type of trip are you interested in?</legend>
+                    <label for="half-day">
+                        <input type="radio" id="half-day" name="trip-type" value="half-day" required>
+                        Half Day Adventure
+                    </label>
+                    <label for="full-day">
+                        <input type="radio" id="full-day" name="trip-type" value="full-day" required>
+                        Full Day Expedition
+                    </label>
+                    <label for="multi-day">
+                        <input type="radio" id="multi-day" name="trip-type" value="multi-day" required>
+                        Multi-Day Adventure
+                    </label>
+                </fieldset>
+
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    Subscribe to our newsletter for adventure updates and special offers
+                </label>
 
                 <button type="submit">Send Message</button>
             </form>
