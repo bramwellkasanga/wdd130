@@ -38,6 +38,9 @@ header img {
 }
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
@@ -45,12 +48,14 @@ nav a {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
-    margin-right: 1.5rem;
     font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.2s;
 }
 
-nav a:last-child {
-    margin-right: 0;
+nav a:hover {
+    background: rgba(21, 97, 109, 0.1);
 }
 
 .hero {
@@ -64,23 +69,6 @@ nav a:last-child {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.12);
-}
-
-.hero h1 {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-    padding: 18px 0;
-    text-align: center;
-    opacity: 0.93;
-    background-color: var(--primary-color);
-    color: #fff;
-    font-family: var(--heading-font);
-    font-size: 2.2rem;
-    letter-spacing: 2px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    border-radius: 0 0 8px 8px;
 }
 
 .hero article {
@@ -113,6 +101,16 @@ nav a:last-child {
     margin: 0;
 }
 
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
 section {
     margin: 2rem 0 1rem 0;
     padding: 0 1rem;
@@ -140,62 +138,27 @@ footer p {
 }
 
 .socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
     margin-top: 0.5rem;
 }
 
 .socialmedia a {
     text-decoration: none;
-    margin: 0 0.5rem;
 }
 
 .socialmedia img {
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
     vertical-align: middle;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     transition: transform 0.2s;
 }
 
 .socialmedia img:hover {
     transform: scale(1.08);
-}
-
-.nav-vertical {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-vertical li {
-    margin-bottom: 0.5rem;
-}
-
-.nav-vertical a {
-    display: block;
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.nav-dots {
-    list-style: disc inside;
-    padding-left: 1.5rem;
-    margin: 1rem 0;
-    text-align: left;
-}
-
-.nav-dots li {
-    margin-bottom: 0.7rem;
-}
-
-.nav-dots a {
-    display: inline;
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
 }
 
 /* Adventure Gallery Layout */
@@ -229,13 +192,90 @@ footer p {
     margin-top: 0.25rem;
 }
 
-footer nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    margin-top: 0.5rem;
+/* === Contact Page Styles === */
+
+/* Company Info */
+.company-info {
+  margin: 2rem auto;
+  max-width: 800px;
+  line-height: 1.6;
 }
 
-footer nav img {
-    width: 32px;
-    height: 32px;
+/* Map */
+.company-info .map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0; /* keep border styling clean */
+  border-radius: 8px;
+}
+
+/* Employee Grid */
+.employees {
+  margin: 2rem auto;
+  max-width: 1000px;
+  text-align: center;
+}
+.employee-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.employee-grid figure {
+  width: 200px;
+}
+.employee-grid img {
+  width: 100%;
+  border-radius: 50%;
+}
+.employee-grid figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Contact Form */
+.contact-form {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form label {
+  font-weight: 600;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Radio & Checkbox tweaks */
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Submit Button */
+.contact-form button {
+  background-color: #0077cc;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #005fa3;
+}
