@@ -13,8 +13,8 @@
 
 <body>
     <header>
-        <img src="images/logo.png" alt="White Water Rafting Logo">
-        <nav>
+        <a href="index.html"><img src="images/logo.png" alt="White Water Rafting Logo"></a>
+        <nav aria-label="Main navigation">
             <ul class="nav-dots">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -23,22 +23,35 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="hero">
+        <!-- Hero Section with Overlay Text -->
+        <section class="hero">
             <img src="images/rafting-hero.jpeg" alt="Rafting adventure on a wild river">
-        </div>
+            <div class="hero-text">
+                <h1>About White Water Rafting</h1>
+                <p>Experience adventure, safety, and fun on every river journey with us.</p>
+            </div>
+        </section>
+
+        <!-- Company Overview -->
         <h1>About Us — White Water Rafting</h1>
         <article>
-            <img src="images/happy-client.jpg" alt="Happy client enjoying rafting"><img src="images/rafting1.jpg"
-                alt="Happy client enjoying rafting"><img src="images/rafting2.jpg"
-                alt="Happy client enjoying rafting"><img src="images/rafting3.jpg"
-                alt="Happy client enjoying rafting"><img src="images/rafting4.jpg" alt="Happy client enjoying rafting">
+            <div class="article-images">
+                <img src="images/happy-client.jpg" alt="Happy client enjoying rafting">
+                <img src="images/rafting1.jpg" alt="Rafting adventure on the river">
+                <img src="images/rafting2.jpg" alt="Rafting adventure on the river">
+                <img src="images/rafting3.jpg" alt="Rafting adventure on the river">
+                <img src="images/rafting4.jpg" alt="Rafting adventure on the river">
+            </div>
             <p>
                 Here at White Water Rafting, our whitewater rafting trips are designed to provide
                 thrill-seekers with an unforgettable experience on the water. Our expert guides ensure safety while
                 you navigate through stunning landscapes and challenging rapids. Oars Up!
             </p>
         </article>
+
+        <!-- History Section -->
         <section>
             <h2>History</h2>
             <p>
@@ -47,6 +60,8 @@
                 the company has grown into a leading provider of whitewater rafting experiences.
             </p>
         </section>
+
+        <!-- Adventure Gallery -->
         <section>
             <h2>Adventure Awaits You!</h2>
             <div class="adventure-gallery">
@@ -74,6 +89,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 White Water Rafting | Bramwell Kasanga</p>
         <nav class="socialmedia">
